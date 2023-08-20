@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,200;1,400&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Oswald:wght@200;300;400;500&family=Poppins:wght@100;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Rubik:ital,wght@0,300;1,300&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+body
+{
+    background: linear-gradient(45deg, rgb(201, 142, 209), black); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+   
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+.startBtn, .adminBtn, .homeBtn
+{
+    background-color: rgb(156, 96, 111) !important;
+    font-size: 25px !important;
+    border-radius: 80px !important;
+    padding: 20px !important;
+    border: none !important;
+    margin: 10px !important;
+    transition: 100ms;
+    display: inline-block;
+    border: 2px solid green;
+}
+#mainDiv
+{
+    
+    width: 100%;
+  flex-direction: column;
+  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.85;
+}
+#brr{
+    border: 5px solid rgb(202, 200, 200);
+    border-radius: 10px;
+    border-width: 10px;
+    flex-direction: row;
+	
+}
+#mainBody
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;   
+}
+#quiz, #panelInner
+{
+    width: 800px;
+    height: 400px;
+    /* background-color: #fff; */
+    display: grid;
+    grid-template-rows: 60px auto;
+    border-radius: 30px;
+    background-color: rgba(216, 151, 151, 0.603);
+    border: 2px solid pink;
+}
+#panelInner
+{
+    height: 550px;
+    width: 1200px;
+    grid-template-rows: 60px auto 62px;
+}
+#quizHeader, #header, #addBtnDiv
+{
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3);
+    z-index: 1;
+    color: aliceblue;
+}
+#quizHeader
+{
+    width: 700px;
+    background-color: black;
+    color: rgb(211, 209, 209);
+}
+#header
+{
+    justify-content: center;
+}
+#quizBody
+{
+    color: rgb(255, 255, 255);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 19px;
+    background-color: rgba(169, 118, 118, 0.885);
+}
+#timer
+{
+    color: white;
+    padding: 18px;
+    background-color:black;
+    margin-right: 350px;
+    border-top-right-radius: 27px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.option_group{
+    margin-left: 0;
+    padding-left: 0;
+}
+li
+{
+    list-style-type: none;
+}
+.option, .optionPanel
+{
+    border: 3px solid transparent;
+    border-radius: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    margin: 10px 10px 10px 0;
+    min-height: 42px;
+    transition: 500ms;
+}
+.option:hover
+{
+    cursor: pointer;
+    border: 3px solid rgb(180, 90, 90);
+}
+.nxtBtn, .rstBtn
+{
+    background-color: rgb(168, 110, 110) !important;
+    border-radius: 50px !important;
+    padding: 15px !important;
+    border: none !important;
+    float: right;
+}
+.active
+{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    margin: 10px 10px 10px 0;
+    color: white;
+    background-color: rgb(118, 73, 73);
+    border: 3px solid rgb(135, 73, 73);
+    transition: 500ms;
+}
+.exitBtn
+{
+    color: white !important;
+    background-color: black !important;
+    width: 200px;
+    height: 70px;
+    margin-bottom: 10px;
+    font-size: x-large !important;
+}
+.nxtBtn:focus, .exitBtn:focus, .rstBtn:focus, .startBtn:focus, .adminBtn:focus, .homeBtn:focus
+{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.nxtBtn:hover, .exitBtn:hover, .rstBtn:hover, .startBtn:hover, .adminBtn:hover, .homeBtn:hover
+{
+    background-color: white !important;
+    color: rgb(208, 97, 97) !important;
+    transition: 500ms;
+}
+/* =================Admin Panel================ */
+.lbLogin {
+    color: aliceblue;
+    font-size: 2rem;
+    
+}
+.btnLogin{
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    opacity: 0.85;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+#username, #password{
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    background-color: black;
+    opacity: 0.75;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+.btnLogin:hover{
+    cursor: pointer;
+    border: 3px solid rgba(195, 167, 43, 0.784);
+    background-color: blanchedalmond;
+}
+#adminLogin {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    justify-content: center;
+    opacity: 0.5;
+    background: linear-gradient( rgba(198, 107, 212, 0.605), rgba(100, 52, 93, 0.622)); 
+    height: 300px;
+    width: 470px;
+    border: 5px solid;
+    border-radius: 15px;
+    border-color: rgba(138, 23, 170, 0.714);
+
+}
+#adminLogin:hover{
+    border-color: azure;
+}
+#mainPanel
+{
+    width: 1000px;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 400px 0px;
+}
+#questionsBody
+{
+    background-color: rgba(23, 22, 23, 0.782);
+    padding: 10px 20px;
+    overflow-y: auto;
+}
+#delAllBtn, #addBtn
+{
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 15px 18px;
+    margin: 1px 30px;
+}
+#addBtnDiv
+{
+    height: 65px;
+    justify-content: center;
+    box-shadow: 0 -2px 5px 1px rgba(0, 0, 0, 0.3);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.homeBtn
+{
+    left: 70%;
+    position: fixed;
+    top: 40vh;
+    padding: 30px 50px !important;
+}
+.panelLi
+{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 42px;
+    align-items: center;
+    margin: 10px;
+}
+.liBtnAdd, .liBtnCancel, .liBtn
+{
+    font-size: 25px !important;
+    border-radius: 50% !important;
+    padding: 10px 12px !important;
+    margin: 0 20px;
+    max-height: 50px;
+}
+.liBtnAdd
+{
+    padding: 10px !important;
+}
+.liBtnCancel
+{
+    padding: 10px 13px !important;
+}
+.option_group{
+    font-weight: 800;
+}
